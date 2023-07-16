@@ -5,6 +5,9 @@ This property arises due to the finite number of possible configurations that th
 
 As the repetition process continues, the configurations encountered by the cube form a cyclic pattern. Eventually, the cube cycles back to its initial configuration, and this cycle continues indefinitely with each subsequent repetition.
 
+Hence, I present to you the **Law of Recursive Convergence Property of Cubes**
+![](https://raw.githubusercontent.com/PrimeTDMomega/repetition-convergence-property/main/resources/imgs/law-of-rcp.png)
+
 ## Group Theory
 Group theory ties into the Repetition Convergence Property (RCP) of the Rubik's cube in several key ways, explaining and formalizing the cyclical behavior observed when repeating a sequence of moves. Here's how group theory concepts are directly relevant to understanding RCP:
 
