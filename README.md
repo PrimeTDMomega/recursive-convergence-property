@@ -1,15 +1,16 @@
-## The Repetition Convergence Property (RCP)
-The Repetition Convergence Property refers to a fundamental characteristic of puzzles like the 3x3 Rubik's cube, where repeating a specific sequence of moves eventually leads to the convergence of the cube's configurations back to its initial state. In other words, after performing the same sequence of moves a certain number of times, the cube returns to the exact arrangement of colors it started with.
+## The Recursive Convergence Property (RCP)
+
+The Recursive Convergence Property refers to a fundamental characteristic of puzzles like the 3x3 Rubik's cube, where repeating a specific sequence of moves eventually leads to the convergence of the cube's configurations back to its initial state. In other words, after performing the same sequence of moves a certain number of times, the cube returns to the exact arrangement of colors it started with.
 
 This property arises due to the finite number of possible configurations that the cube can take on. With each move, the cube transitions from one valid configuration to another. Since there are only a limited number of configurations possible, and each move is reversible (you can undo any move by performing the inverse move), repeating the same sequence of moves will eventually cause the cube to revisit configurations it has been in before.
 
 As the repetition process continues, the configurations encountered by the cube form a cyclic pattern. Eventually, the cube cycles back to its initial configuration, and this cycle continues indefinitely with each subsequent repetition.
 
-Hence, I present to you the **Law of Recursive Convergence Property of Cubes**
-![](https://raw.githubusercontent.com/PrimeTDMomega/repetition-convergence-property/main/resources/imgs/law-of-rcp.png)
+Hence, I present to you the **Law of Recursive Convergence Property of Cubes** ![Recursive Convergence Property](https://raw.githubusercontent.com/PrimeTDMomega/repetition-convergence-property/main/resources/imgs/law-of-rcp.png)
 
 ## Group Theory
-Group theory ties into the Repetition Convergence Property (RCP) of the Rubik's cube in several key ways, explaining and formalizing the cyclical behavior observed when repeating a sequence of moves. Here's how group theory concepts are directly relevant to understanding RCP:
+
+Group theory ties into the Recursive Convergence Property (RCP) of the Rubik's cube in several key ways, explaining and formalizing the cyclical behavior observed when repeating a sequence of moves. Here's how group theory concepts are directly relevant to understanding RCP:
 
 1.  **Group Structure of Cube Moves**: Group theory provides a formal framework to describe the Rubik's cube moves as a mathematical group. The set of all possible cube configurations forms the elements of this group, and the cube moves (turns of faces) represent the binary operation. The group axioms ensure that the cube moves satisfy closure (the result of a move is another valid configuration), associativity (the order of moves doesn't matter), identity (the starting configuration is the identity element), and inverses (each move has an inverse move that undoes its effect).
     
@@ -20,9 +21,11 @@ Group theory ties into the Repetition Convergence Property (RCP) of the Rubik's 
 4.  **Order of Elements and RCP**: In group theory, the order of an element refers to the number of times the binary operation needs to be applied to obtain the identity element. For the Rubik's cube, the order of a sequence of moves corresponds to the number of repetitions needed to return to the initial configuration. Group theory's understanding of orders of elements helps explain why the cube's configurations cycle back to the starting state after a certain number of repetitions.
     
 5.  **Cayley Graphs and Visualization**: Cayley graphs, a concept from group theory, can be used to visually represent the Rubik's cube move sequences and their connections. These graphs help illustrate the cyclical nature of the cube's configurations and aid in understanding the RCP.
+    
 
 ## Mathematical Derivation
-To derive the Repetition Convergence Property mathematically, we need to formalize the concepts using group theory and combinatorics.
+
+To derive the Recursive Convergence Property mathematically, we need to formalize the concepts using group theory and combinatorics.
 
 Let's define the following terms:
 
@@ -52,7 +55,8 @@ Mathematically, we can represent the number of possible configurations (P) for a
 Thus, the theorem is proved that if an algorithm with N moves is repeated R times, the cube will come back to the initial position.
 
 ## RCP & God's Number : Are They Related ?
-The Repetition Convergence Property (RCP) and God's Number are two interconnected concepts that provide valuable insights into the nature of the Rubik's cube and its solvability. While they may seem distinct at first glance, a deeper examination reveals a strong relationship between them.
+
+The Recursive Convergence Property (RCP) and God's Number are two interconnected concepts that provide valuable insights into the nature of the Rubik's cube and its solvability. While they may seem distinct at first glance, a deeper examination reveals a strong relationship between them.
 
 **1. Understanding RCP:** RCP refers to the fascinating property of the Rubik's cube where repeating a specific sequence of moves eventually leads to the convergence of configurations back to the initial state. In other words, after performing the same sequence of moves a certain number of times, the cube returns to the exact arrangement of colors it started with. RCP arises due to the finite number of possible configurations the cube can take on, as well as the reversibility of its moves. This property is fundamental to the cyclical behavior observed when solving the cube.
 
@@ -63,8 +67,3 @@ The Repetition Convergence Property (RCP) and God's Number are two interconnecte
 God's Number, as the worst-case solution length, is affected by the cyclical nature of configurations. Because the cube returns to previously visited states after a certain number of repetitions, the exhaustive search for God's Number becomes more manageable. The cyclic patterns effectively reduce the number of unique configurations that need to be considered during the search, making it a more feasible task.
 
 **Practical Implications:** The relationship between RCP and God's Number has practical implications for solving the Rubik's cube. While God's Number sets the theoretical limit for solving any cube configuration, RCP provides solvers with the confidence that a solution path will eventually cycle back to a known state. This knowledge encourages the development of efficient solving algorithms that recognize repetitive patterns and take advantage of the cube's cyclic nature.
-
-  
-The similarity between the Repetition Convergence Property (RCP) and God's Number lies in their common foundation in group theory. Both concepts are rooted in the mathematical study of group structures and their properties. RCP is established through the understanding of the Rubik's cube moves forming a group, where each move has an inverse, and repeating a sequence of moves leads to the cyclical convergence of configurations. On the other hand, God's Number is determined by exploring the group of all possible configurations of the Rubik's cube and finding the longest optimal solution to return to the solved state. Group theory provides the formal framework to analyze and describe the cube's behaviors, helping to explain its cyclical nature, and revealing the theoretical upper bound on its complexity.
-
-In conclusion, RCP and God's Number are indeed related. The cyclical nature of the cube's configurations, as revealed by RCP, influences the computation of God's Number and provides valuable guidance for devising effective solving strategies.
