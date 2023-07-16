@@ -22,7 +22,7 @@ At this stage, we need to consider the parity constraint of the 3x3 Rubik's cube
 
 The total number of combinations on a 3x3 Rubik's cube is given by:
 
-Total combinations = 12! × 2^11 × 8! × 3^7 / 2 ≈ 43,252,003,274,489,856,000.
+Total combinations = ![calculaton](https://raw.githubusercontent.com/PrimeTDMomega/repetition-convergence-property/main/resources/imgs/calculation.png)
 
 This remarkable number, approximately 43 quintillion (4.3 x 10^19), illustrates the immense complexity and challenge of solving the Rubik's cube from any scrambled configuration.
 
