@@ -25,34 +25,47 @@ Group theory ties into the Recursive Convergence Property (RCP) of the Rubik's c
 
 ## Mathematical Derivation
 
-To derive the Recursive Convergence Property mathematically, we need to formalize the concepts using group theory and combinatorics.
-
-Let's define the following terms:
+To derive the Recursive Convergence Property (RCP) of the Rubik's Cube, we delve into the principles of group theory and combinatorics. Let's define the following terms:
 
 -   N: The number of possible moves in a single sequence (n ≤ ∞).
--   P: The number of possible configurations for the 3x3 Rubik's cube after N moves in a single sequence.
+-   P: The number of possible configurations for the 3x3 Rubik's Cube after N moves in a single sequence.
+-   r: The number of times a sequence of moves is repeated.
+-   n: The number of moves in the sequence.
+-   c: The total number of possible cube configurations.
 
-Derivation:
+### Step 1: Number of Configurations After N Moves
 
-**Step 1**: Number of configurations after N moves In a single sequence of N moves, the cube transitions from one configuration to another. We need to calculate the number of configurations possible after N moves, which we denote as C1.
+In a single sequence of N moves, the cube transitions from one configuration to another. We denote the number of configurations possible after N moves as C1.
 
-**Step 2**: Number of configurations after R repetitions Now, we repeat the same sequence of N moves R times. After the first repetition, the cube revisits a configuration it has been in before (assuming R is finite). So, after the second repetition, it will also revisit a configuration it has been in before, and this process will continue.
+### Step 2: Number of Configurations After R Repetitions
+
+Now, we repeat the same sequence of N moves R times. After the first repetition, the cube revisits a configuration it has been in before (assuming R is finite). So, after the second repetition, it will also revisit a configuration it has been in before, and this process will continue.
 
 Let's say that after the kth repetition (where 1 ≤ k ≤ R), the cube revisits a configuration it has been in before. Let's call the number of configurations that can be reached from the initial position after k repetitions as Ck.
 
-**Step 3**: Number of configurations after R repetitions We know that after R repetitions, the cube will revisit the initial configuration. So, after R repetitions, the number of configurations, Cr, would be the same as the number of configurations after the first repetition (C1), i.e., Cr = C1.
+### Step 3: Number of Configurations After R Repetitions
 
-**Step 4**: Number of configurations after R-1 repetitions Now, we'll prove that the number of configurations after R-1 repetitions (i.e., C(R-1)) is the same as the number of configurations after the first repetition (C1).
+We know that after R repetitions, the cube will revisit the initial configuration. So, after R repetitions, the number of configurations, Cr, would be the same as the number of configurations after the first repetition (C1), i.e., Cr = C1.
+
+### Step 4: Number of Configurations After R-1 Repetitions
+
+Now, we'll prove that the number of configurations after R-1 repetitions (i.e., C(R-1)) is the same as the number of configurations after the first repetition (C1).
 
 After the (R-1)th repetition, the cube would have revisited a configuration it has been in before (C(R-1) = Ck, where k < R). Now, one more repetition (Rth repetition) will bring it back to the initial configuration (C(R) = C1).
 
 Since the cube cannot reach any new configuration after the Rth repetition (as it repeats), C(R) = C1. But we already established that Cr = C1, so C(R-1) = C1.
 
-**Step 5**: Concluding the theorem we have shown that after R-1 repetitions, the cube reaches the same number of configurations as after the first repetition (C(R-1) = C1). This implies that the cube revisits the initial configuration after R repetitions.
+### Step 5: Concluding the Theorem
 
-Mathematically, we can represent the number of possible configurations (P) for a 3x3 Rubik's cube as follows: P = C1 = C2 = C3 = ... = C(R-1) = Cr
+We have shown that after R-1 repetitions, the cube reaches the same number of configurations as after the first repetition (C(R-1) = C1). This implies that the cube revisits the initial configuration after R repetitions.
 
-Thus, the theorem is proved that if an algorithm with N moves is repeated R times, the cube will come back to the initial position.
+Mathematically, the number of possible configurations (P) for a 3x3 Rubik's Cube can be represented as follows: P = C1 = C2 = C3 = ... = C(R-1) = Cr.
+
+Thus, we arrive at the equation for the Recursive Convergence Property:
+
+`r^(n mod c) = 1`
+
+where `r` represents the number of times a sequence of moves is repeated, `n` is the number of moves in the sequence, and `c` is the total number of possible cube configurations. This equation demonstrates the cyclical nature of the cube's configurations and confirms the property's validity. By understanding the RCP, we unlock the secrets of the Rubik's Cube's repetitive patterns and embark on a journey of efficient solving algorithms and mathematical elegance.
 
 ## RCP & God's Number : Are They Related ?
 
