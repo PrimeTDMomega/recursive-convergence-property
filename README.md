@@ -24,7 +24,6 @@ Group theory ties into the Recursive Convergence Property (RCP) of the Rubik's c
 5.  **Cayley Graphs and Visualization**: Cayley graphs, a concept from group theory, can be used to visually represent the Rubik's cube move sequences and their connections. These graphs help illustrate the cyclical nature of the cube's configurations and aid in understanding the RCP.
     
 
-## [](https://github.com/PrimeTDMomega/recursive-convergence-property/blob/0e024aad6f492489878ddf43eaf3b147736e25f5/README.md#mathematical-derivation)Mathematical Derivation
 
 
 ## Mathematical Derivation
